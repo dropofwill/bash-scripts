@@ -2,7 +2,7 @@
 set -o nounset
 set -o errexit
 
-echo "pull_api.sh $0 $1"
+echo "$0 $1"
 
 curl "http://gdata.youtube.com/feeds/api/videos?alt=json&q=$1" -o ./latest_results.json
 
